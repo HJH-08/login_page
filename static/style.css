@@ -1,0 +1,56 @@
+body{
+    background-color: lightblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main_body{
+    background-color: rgba(240, 241, 230, .9);
+    margin: 120px auto;
+    padding: 15px;
+    width: 50%;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+p{
+    display: inline;
+}
+
+.login_details{
+    margin: 20px;
+}
+
+.login_header{
+    margin-bottom: 50px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #808080;
+}
+
+.msg{
+    margin: 20px;
+}
+
+input{
+    height: 20px;
+}
+
+.username_label{
+    padding: 7px;
+}
+
+.password_label{
+    padding: 9.5px;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+}
+
+footer{
+    position:absolute;
+    bottom: 10px;
+    width: 90%;
+    text-align: center;
+    padding-left: 5%;
+    font-size: 14px;
+}

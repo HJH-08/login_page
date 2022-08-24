@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+
+
+{% block head %} 
+<title>Login Page</title>
+{% endblock %}
+
+
+
+
+{% block body %} 
+<h1 class="login_header">Login Page</h1>
+<form action="{{ url_for('login') }}" method="post">
+    <div class="login_details">
+        <label for="username">
+            <p class="username_label">Username</p>
+        </label>
+        <input type="text" name="username" placeholder="Username" id="username" required>
+    </div>
+
+    <div class="login_details">
+        <label for="password">
+            <p class="password_label">Password</p>
+        </label>
+        <input type="password" name="password" placeholder="Password" id="password" required>
+    </div>
+
+    <div class="msg">{{ msg }}</div>
+
+    <div>
+        <input type="submit" value="Login">
+    </div>
+
+</form>
+{% endblock %}

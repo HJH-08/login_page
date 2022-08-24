@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    {% block head %} {% endblock %}
+</head>
+<body>
+    <div class="main_body">
+        {% block body %} {% endblock %}
+    </div>
+    
+    <footer>
+        <p>Project By: Ho Jun Han. Feel free to contact me: 
+        <a href="mailto:hojunhan49@gmail.com">hojunhan49@gmail.com</a></p>
+    </footer>
+</body>
+</html>
