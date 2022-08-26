@@ -1,13 +1,14 @@
-
 from flask import Flask, render_template, url_for
 from flask_mysqldb import MySQL
+import yaml
 
 app = Flask(__name__)
 
-app.config['MYSQL_HOST'] = 'sql6.freemysqlhosting.net'
-app.config['MYSQL_USER'] = 'sql6514845'
-app.config['MYSQL_PASSWORD'] = 'G78VEgnEUk'
-app.config['MYSQL_DB'] = 'sql6514845'
+db = yaml.load(open('dib.yaml'))
+app.config['MYSQL_HOST'] = db['mysql_host']
+app.config['MYSQL_USER'] = db['mysql_user']
+app.config['MYSQL_PASSWORD'] = db['mysql_password']
+app.config['MYSQL_DB'] = db['mysql_db']
 # Returns data as dictionary instead of tuples
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 
