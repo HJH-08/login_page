@@ -3,15 +3,15 @@
 
 
 {% block head %} 
-<title>Login Page</title>
+<title>Register Page</title>
 {% endblock %}
 
 
 
 
 {% block body %} 
-<h1 class="login_header">Login Page</h1>
-<form action="{{ url_for('index') }}" method="post">
+<h1 class="login_header">Register Page</h1>
+<form action="{{ url_for('register') }}" method="post" autocomplete="off">
     <div class="login_details">
         <label for="username">
             <p class="username_label">Username</p>
@@ -29,11 +29,11 @@
     <div class="msg">{{ msg }}</div>
 
     <div>
-        <input type="submit" value="Login">
+        <input type="submit" value="Register">
     </div>
 
     <div>
-        <p>If you do not have an account, click <a href="{{ url_for ('register') }}">here to register</a>.</p>
+        <a href="{{ url_for ('index') }}">Back to login page</a>
     </div>
 
 </form>

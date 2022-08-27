@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+
+{% block head %} 
+<title>Logged Out</title>
+{% endblock %}
+
+
+
+
+{% block body %} 
+<h1 class="login_header">You have successfully logged out</h1>
+
+
+<div>
+    <a href="{{ url_for ('index') }}">Return to Login Page</a>
+</div>
+
+
+{% endblock %}
