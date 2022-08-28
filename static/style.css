@@ -1,56 +1,85 @@
-body{
+html { 
+    background: url('https://4kwallpapers.com/images/walls/thumbs_2t/8361.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-color: lightblue;
+  }
+  
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.main_body{
-    background-color: rgba(240, 241, 230, .9);
-    margin: 120px auto;
-    padding: 15px;
-    width: 50%;
-    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
-    text-align: center;
-}
-
-p{
-    display: inline;
-}
-
-.login_details{
-    margin: 20px;
-}
-
-.login_header{
-    margin-bottom: 50px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #808080;
-}
-
-.msg{
-    margin: 20px;
-}
-
-input{
-    height: 20px;
-}
-
-.username_label{
-    padding: 7px;
-}
-
-.password_label{
-    padding: 9.5px;
-}
-
-input[type="submit"]{
-    cursor: pointer;
-}
-
-footer{
+footer {
     position:absolute;
     bottom: 10px;
     width: 90%;
     text-align: center;
     padding-left: 5%;
     font-size: 14px;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+p {
+    display: inline;
+}
+
+input {
+    height: 20px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.font_small {
+    font-size: 14px;
+}
+
+.main_body {
+    background-color: rgba(240, 241, 230, .9);
+    margin: 120px auto;
+    padding: 15px;
+    width: 50%;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.divider {
+    margin: 5px;
+}
+
+.login_header {
+    margin-bottom: 50px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #808080;
+}
+
+.login_details {
+    margin: 20px;
+}
+
+.msg {
+    margin: 20px;
+    font-style: italic;
+}
+
+.username_label {
+    padding: 7px;
+}
+
+.password_label {
+    padding: 9.5px;
+}
+
+.welcome_message {
+    font-size: 32px;
+    padding-bottom: 40px;
 }

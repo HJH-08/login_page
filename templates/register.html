@@ -1,16 +1,11 @@
 {% extends 'base.html' %}
 
-
-
 {% block head %} 
 <title>Register Page</title>
 {% endblock %}
 
-
-
-
 {% block body %} 
-<h1 class="login_header">Register Page</h1>
+<h1 class="login_header">Register An Account</h1>
 <form action="{{ url_for('register') }}" method="post" autocomplete="off">
     <div class="login_details">
         <label for="username">
@@ -26,7 +21,9 @@
         <input type="password" name="password" placeholder="Password" id="password" required>
     </div>
 
-    <div class="msg">{{ msg }}</div>
+    <div class="msg">
+        {{ msg }}
+    </div>
 
     <div>
         <input type="submit" value="Register">
