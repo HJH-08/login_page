@@ -1,3 +1,5 @@
+<br>
+
 <p align="center">
     <img src="https://img.shields.io/github/last-commit/hjh-08/login_page" />
     <img src="https://img.shields.io/github/repo-size/hjh-08/login_page">
@@ -15,7 +17,7 @@
 
 ## Combining HTML, CSS, Python, MySQL and Hash Authentication
 
-This project is mostly written in `Python`. A user can register a username and a password. This information is then uploaded into a database, which is hosted live as of the time this project is last edited. The password is stored along with a **hashed string** into the databse. When a user logs in, hash authentication is used to ensure encryption of password (though the plain-text password is stored in the database for debugging purposes right now). A session is created, and the user is directed to a **loggedin** page which cannot be otherwise accessed. The user can change his password, which updates the database. He can then log out, which ends his session.
+This project is mostly written in `Python`. A user can register a username and a password. This information is then uploaded into a database, which is hosted live as of the time this project is last edited. The password is stored along with a **hashed string** into the databse. When a user logs in, hash authentication is used to ensure encryption of password (though the plain-text password is stored in the database for debugging purposes right now). A session is created, and the user is directed to a **loggedin** page which cannot be otherwise accessed. The user can change his password, which updates the database. He can then log out, which ends his session. <br>  
 The project uses:
 
 * `Flask` framework to build the web application
@@ -76,4 +78,4 @@ When the above code is run, something like this should appear in the terminal:
 ![Terminal when code is run](https://github.com/HJH-08/login_page/blob/main/login%20page%20instructions.png)
 <br>
 
-**Ctrl + click** on the underlined part of the code (http://127.0.0.1:5000 in this case) to serve the project.
+**Ctrl + click** on the underlined part of the code (http://127.0.0.1:5000 in the case of the picture shown above) to serve the project.
