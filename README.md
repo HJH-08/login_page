@@ -7,7 +7,7 @@
 <p align="center">
   <a href="#login-page">About</a> •
   <a href="#recording-of-the-login-page-in-use">Visuals</a> •
-  <a href="#prerequisities">Prerequisites</a> •
+  <a href="#prerequisites">Prerequisites</a> •
   <a href="#how-to-run-the-script">Instructions</a> 
 </p>
 
